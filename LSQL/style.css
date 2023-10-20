@@ -1,0 +1,16 @@
+
+.opt{
+      background: red;
+      color: white;
+      text-decoration: none;
+      padding: 0.1vw 0.2vw 0.1vw 0.2vw;
+}
+
+
+.haha{
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+}
+

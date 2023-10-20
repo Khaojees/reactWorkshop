@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio x Sawang</title>
+    <link rel="icon" type="image/x-icon" href="icon/mylogo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function myFunction() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var number = year-1992;
+          document.getElementById("myText").innerHTML = number;
+        }
+      </script>
+</head>
+<body onload="myFunction()">
+    <header >
+        <a href="index.html"><img src="icon/weblogo.svg" class="webicon"></a>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="#MyMain">Main</a>
+                </li>
+                <li>
+                    <a href="#MyEducation">Education</a>
+                </li>
+                <li>
+                    <a href="#MyWorkExperience">Work Experience</a>
+                </li>
+                <li>
+                    <a href="#MyMySkills">My Skills</a>
+                </li>
+                <li>
+                    <a href="#MyOther">Other</a>
+                </li>
+                <li>
+                    <a href="#MyContributions">Contributions</a>
+                </li>
+            </ul>
+            <div class="contacticon-container">
+                  <a href="https://www.facebook.com/poolohit.physics" target="_blank"><img src="icon/facebook.svg" class="contacticon"></a>
+                  <a href="https://line.me/ti/p/3CdAhUpcGp" target="_blank"><img src="icon/line.svg" class="contacticon"></a>
+                </div>
+        </nav>
+        <div class="header-right">
+            <div class="hamburger">
+                <div><img src="icon/hamicon.svg" class="hamicon"></div>
+
+            </div>
+        </div>
+    </header>
+    <div id="MyMain" class="freearea"></div>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
+    <main>
+      <section class="sec1">
+            <div class="sec1A">
+                  <img src="imgs/555low.png" class="myimg">
+            </div>
+            <div class="sec1B">
+                  <p class="content">Sawang</p>
+                  <p class="content">Saengthana</p>
+            </div>
+            <div class="sec1C">
+                  <div class="datacontainer">
+                        <div class="content aboutme">
+                              <h3 class="fontdescripe1" >Date of Birth</h3>
+                              <h3 class="fontdescripe2">: 10 July 1992</h3>
+                        </div>
+                        <div class="content aboutme">
+                              <h3 class="fontdescripe1">Age</h3>
+                              <h3 class="fontdescripe2">: <span id="myText"></span> years old</h3>
+                        </div>
+                        <div class="content aboutme">
+                              <h3 class="fontdescripe1">Nationality</h3>
+                              <h3 class="fontdescripe2">: Thai</h3>
+                        </div>
+                        <div class="content aboutme">
+                              <h3 class="fontdescripe1">Religion</h3>
+                              <h3 class="fontdescripe2">: Buddhism</h3>
+                        </div>
+                        <div class="content aboutme">
+                              <img src="icon/phone.svg" class="phoneimg">
+                              <h3 class="fontdescripe2">&nbsp 093-2399950</h3>
+                        </div>
+                        <div class="content aboutme">
+                            <img src="icon/email.svg" class="phoneimg">
+                            <h3 class="fontdescripe2">&nbsp poolohit@outlook.com</h3>
+                      </div>
+                  </div>
+            </div>   
+      </section>
+      <section id="MyEducation" class="sec2 img-bg">
+                <h1 class="secheadtext">Education</h1>
+            <div class="sec2-content">
+                <div class="sec2sub-content content">
+                    <div class="yeartext">1997-2005</div>
+                    <div class="fontdescripe2">Grade 1-6 (P.1 - P.6)</div>
+                    <div class="fontdescripe2">Ban Wang Tum Lung School</div>
+                    <div class="fontdescripe1">GPA : -</div>
+                </div>
+                <div class="horiline"></div>
+                <div class="sec2sub-content content">
+                    <div class="yeartext">2006-2011</div>
+                    <div class="fontdescripe2">Grade 7-12 (M.1 - M.6)</div>
+                    <div class="fontdescripe2">Nabotphittayakhom School</div>
+                    <div class="fontdescripe1">GPA : 2.87</div>
+                </div>
+                <div class="horiline"></div>
+                <div class="sec2sub-content content">
+                    <div class="yeartext">2012-2015</div>
+                    <div class="fontdescripe2">Bachelor's degree</div>
+                    <div class="fontdescripe2">Pibulsongkram Rajabhat University</div>
+                    <div class="fontdescripe2">Major Physics</div>
+                    <div class="fontdescripe1">GPA : 3.26</div>
+                </div>
+            </div>
+      </section>
+      <section id="MyWorkExperience" class="sec3">
+        <div class="WE-secheadtext-container">
+            <h1 class="WE-secheadtext">Work Experience</h1>
+        </div> 
+        <div class="sec3-content">
+            <div class="sec3sub-content content">
+                <div class="yeartext">April 2018 - March 2023</div>
+                <div class="fontdescripe1">Royal English Programme School Bangchang</div>
+                <div class="WE-flex">
+                    <div class="fontdescripe1">Position :&nbsp</div>
+                    <div class="fontdescripe2">ICT Teacher</div>
+                </div>
+                <div>
+                    <div class="fontdescripe1">Job description :&nbsp</div>
+                    <div class="fontdescripe2">Teach grade 7 - 12 student by teaching the following content, Programming (Scratch / C / JAVA / Python etc.), Graphic Design (Photoshop / Illustrator / Premiere pro etc.)</div>
+                </div>
+            </div>   
+            <div class="sec3sub-content content">
+                <div class="yeartext">July 2017 - April 2018</div>
+                <div class="fontdescripe1">Mae Mae Printing Co.,Ltd.</div>
+                <div class="WE-flex">
+                    <div class="fontdescripe1">Position :&nbsp</div>
+                    <div class="fontdescripe2">Staff (graphic design department)</div>
+                </div>
+                <div>
+                    <div class="fontdescripe1">Job description :&nbsp</div>
+                    <div class="fontdescripe2">Design and provide artwork before sent to production line. Most of the work is designed to be used to make stickers for packaging and various products. including product box.</div>
+                </div>
+            </div>
+            <div class="sec3sub-content content">
+                <div class="yeartext">May 2016 - March 2017</div>
+                <div class="fontdescripe1">Interhides (Public) Company Limited</div>
+                <div class="WE-flex">
+                    <div class="fontdescripe1">Position :&nbsp</div>
+                    <div class="fontdescripe2">Supervisor and R&D</div>
+                </div>
+                <div>
+                    <div class="fontdescripe1">Job description :&nbsp</div>
+                    <div class="fontdescripe2">Control all process in retanning line, R&D for improve product and support foreign technician, Maintenance of measuring instruments in the tannery.</div>
+                </div>
+            </div>
+            <div class="sec3sub-content content">
+                <div class="yeartext">August 2015 - May 2016</div>
+                <div class="fontdescripe1">Proprint advance Co.,Ltd.</div>
+                <div class="WE-flex">
+                    <div class="fontdescripe1">Position :&nbsp</div>
+                    <div class="fontdescripe2">Graphic design</div>
+                </div>
+                <div>
+                    <div class="fontdescripe1">Job description :&nbsp</div>
+                    <div class="fontdescripe2">Design for printing media using Photoshop and Illustrator. Design various prints such as billboards, vinyl labels, stickers, business cards.</div>
+                </div>
+            </div>
+            <div class="sec3sub-content content">
+                <div class="yeartext">April 2014 - July 2014</div>
+                <div class="fontdescripe1">Sunchirin Industry (Thailand) Ltd.</div>
+                <div class="WE-flex">
+                    <div class="fontdescripe1">Position :&nbsp</div>
+                    <div class="fontdescripe2">Apprentice</div>
+                </div>
+                <div>
+                    <div class="fontdescripe1">Job description :&nbsp</div>
+                    <div class="fontdescripe2">Make sample product and learning all process in factory, Learning and use CNC machine, Learning and use Faroarm to measurement sample product.</div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="sec4">
+        <div id="MyMySkills" class="WE-secheadtext-container">
+            <h1 class="secheadtext">My Skills</h1>
+        </div> 
+        <div class="sec4-container">
+            <div class="skill">
+                <div class="makecenter yeartext">English language</div>
+                <li><h3 class="fontdescripe2">Litening</h3>
+                    <div class="spancenter"><span class="bar"><span class="LiteningBar"></span></span></div>
+                </li>
+                <li><h3 class="fontdescripe2">Speaking</h3>
+                    <div class="spancenter"><span class="bar"><span class="SpeakingBar"></span></span></div>
+                </li>
+                <li><h3 class="fontdescripe2">Reading</h3>
+                    <div class="spancenter"><span class="bar"><span class="ReadingBar"></span></span></div>
+                </li>
+                <li><h3 class="fontdescripe2">Writing</h3>
+                    <div class="spancenter"><span class="bar"><span class="WritingBar"></span></span></div>
+                </li>
+            </div>
+            <div class="skill">
+                <div class="makecenter yeartext">Computer skill</div>
+                <li><h3 class="fontdescripe2">MS.Office</h3>
+                    <div class="spancenter"><span class="bar"><span class="MSOffice"></span></span></div>
+                </li>
+                <li><h3 class="fontdescripe2">Google suite</h3>
+                    <div class="spancenter"><span class="bar"><span class="Googlesuite"></span></span></div>
+                </li>
+                <li><h3 class="fontdescripe2">Programming (C/JAVA/Python)</h3>
+                    <div class="spancenter"><span class="bar"><span class="Programming"></span></span></div>
+                </li>
+                <li><h3 class="fontdescripe2">Graphic Design (Photoshop/ Illustrator)</h3>
+                    <div class="spancenter"><span class="bar"><span class="GraphicDesign"></span></span></div>
+                </li>
+            </div>
+        </div>
+        <div class="WE-secheadtext-container">
+            <h1 id="MyOther" class="secheadtext">Other</h1>
+        </div> 
+        <div class="sec4-container">
+            <div class="skill">
+                <div class="makecenter yeartext">Hobbies</div>
+                <ul>
+                    <li class="fontdescripe2">Play guitar</li>
+                    <li class="fontdescripe2">Photograph using mirrorless camera</li>
+                    <li class="fontdescripe2">Play dota2 games</li>
+                    <li class="fontdescripe2">Travel / Camping</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <div class="makecenter yeartext">Future goals</div>
+                <ul>
+                    <li class="fontdescripe2">WEB Design (Front end/ Back end developer)</li>
+                    <li class="fontdescripe2">Mobile app developer</li>
+                    <li class="fontdescripe2">Stocks</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section class="sec5">
+        <div id="MyContributions" class="WE-secheadtext-container">
+            <h1 class="WE-secheadtext">Contributions</h1>
+        </div>
+        <div class="Contributions">
+            <div class="gallery-item" data-index="1"><img src="imgs/con1.jpg"></div>
+            <div class="gallery-item" data-index="2"><img src="imgs/con2.jpg"></div>
+            <div class="gallery-item" data-index="3"><img src="imgs/con4.jpg"></div>
+            <div class="gallery-item" data-index="4"><img src="imgs/con5.jpg"></div>
+            <div class="gallery-item" data-index="5"><img src="imgs/con6.jpg"></div>
+            <div class="gallery-item" data-index="6"><img src="imgs/con7.jpg"></div>
+            <div class="gallery-item" data-index="7"><img src="imgs/con8.jpg"></div>
+        </div> 
+        <script>
+            const galleryItem = document.getElementsByClassName("gallery-item");
+
+            const lightboxContainer = document.createElement("div");
+            const lightboxContent = document.createElement("div");
+            const lightboxImg = document.createElement("img");
+            const lightboxPrev = document.createElement("div");
+            const lightboxNext = document.createElement("div");
+
+            lightboxContainer.classList.add('lightbox');
+            lightboxContent.classList.add('lightbox-content');
+            lightboxPrev.classList.add("fa","fa-angle-left","lightbox-prev");
+            lightboxNext.classList.add("fa","fa-angle-right","lightbox-next");
+
+            lightboxContainer.appendChild(lightboxContent);
+            lightboxContent.appendChild(lightboxImg);
+            lightboxContent.appendChild(lightboxPrev);
+            lightboxContent.appendChild(lightboxNext);
+            document.body.appendChild(lightboxContainer);
+
+            let index = 1;
+            function showLightBox(n){
+                if(n>galleryItem.length){
+                    index=1;
+                }else if(n<1){
+                    index = galleryItem.length;
+                }
+                let imageLocation = galleryItem[index-1].children[0].getAttribute("src");
+                lightboxImg.setAttribute("src",imageLocation);
+            }
+            function currentImage(){
+                lightboxContainer.style.display="block";
+                let imageIndex = parseInt(this.getAttribute("data-index"));
+                showLightBox(index=imageIndex);
+            }
+            for(let i =0; i<galleryItem.length;i++){
+                galleryItem[i].addEventListener("click",currentImage);
+            }
+            function sliderImage(n){
+                showLightBox(index +=n);
+            }
+            function prevImage(){
+                sliderImage(-1);
+            }
+            function nextImage(){
+                sliderImage(1);
+            }
+            lightboxPrev.addEventListener("click",prevImage);
+            lightboxNext.addEventListener("click",nextImage);
+
+            function closeLightBox(){
+                if(this === event.target){
+                    lightboxContainer.style.display="none";
+                }
+            }
+            lightboxContainer.addEventListener("click",closeLightBox);
+
+
+        </script>
+      </section>
+      <section class="sec6">
+        <footer class="footer">
+            <a href="#MyMain">
+                <i class="fa-solid fa-circle-chevron-up" ></i>                 
+            </a>
+            <a href="#MyMain">
+                <h2 class="totop">Goto top</h2>
+            </a>
+            
+        </footer>
+      </section>
+    </main>
+</body>
+</html>

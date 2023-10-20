@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Shoping</title>
+
+      <link rel="stylesheet" href="index.css">
+      <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+      <nav >
+            <div class="naw-container">
+                  <a href="index.html">
+                        <img src="img/logo copy.webp" class="mylogo">
+                  </a>
+                  <div class="nav-profile">
+                        <p class="nav-profile-name">Khaojees</p>
+                        <div style="cursor: pointer;" onclick="opencart()" class="nav-profile-cart">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              <div id="cartcount" class="cartcount" style="display: none;">
+                                    0
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </nav>
+      <div class="container">
+            <div class="menu">
+                  <input onkeyup="searchsomething(this)" id="txt_search" type="text" class="searchbar" placeholder="search somthing...">
+                  <a onclick="searchproduct('all')" class="menubar-item">All Products</a>
+                  <a onclick="searchproduct('Acoustic')" class="menubar-item">Acoustic Guitar</a>
+                  <a onclick="searchproduct('Electric')" class="menubar-item">Eletric Guitar</a>
+            </div>
+            <div id="productlist" class="products">
+                  
+            </div>
+      </div>
+
+      <div id="modaldsc" class="modal" style="display: none;">
+            <div onclick="closemodaldsc()" class="modal-bg"></div>
+            <div class="modal-page">
+                  <h2>Detial</h2>
+                  <br>
+                  <div class="modal-descontent">
+                        <img id="mdd-img" src="" class="modal-desc-img">
+                        <div class="modal-desc-detial">
+                              <p id="mdd-productname" style="font-size: 1.5vw;">Product Name</p>
+                              <p id="mdd-price" style="font-size: 1.2vw;">Price</p>
+                              <br>
+                              <p id="mdd-description" style="color: #adadad;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel error sunt aliquam tempore molestiae, aut repudiandae numquam expedita neque nostrum aliquid nam reprehenderit placeat fugiat quaerat iste nobis quibusdam illo quia esse consectetur enim! Obcaecati quis ducimus eveniet qui.</p>
+                              <br>
+                              <div class="btn-controll">
+                                    <button onclick="closemodaldsc()" class="btn">
+                                          Close
+                                    </button>
+                                    <button onclick="addtocart()" class="btn btn-buy">
+                                          Add to cart
+                                    </button>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div id="madalcart" class="modal" style="display: none;">
+            <div  onclick="closemodaldsc()" class="modal-bg"></div>
+            <div class="modal-page">
+                  <h2>My Cart</h2>
+                  <br>
+                  <div id="mycart" class="cartlist">
+                        <div class="cartlist-item">
+                              <div class="cartleft">
+                                    <img src="img/Fender_eComm_ShopCard_NewReleases_squier_sonic@2x.jpg" alt="">
+                                    <div class="cartlist-detial">
+                                          <p style="font-size: 1.5vw;">Product Name</p>
+                                          <p style="font-size: 1.2vw;">Price</p>
+                                    </div>
+                              </div>
+                              <div class="cartright">
+                                    <p class="btnc">-</p>
+                                    <p style="margin: 0 10px;">1</p>
+                                    <p class="btnc">+</p>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="btn-controll">
+                        <button  onclick="closemodaldsc()" class="btn">
+                              Cancel
+                        </button>
+                        <button class="btn btn-buy">
+                              Buy
+                        </button>
+                  </div>
+                  
+            </div>
+      </div>
+      
+</body>
+</html>

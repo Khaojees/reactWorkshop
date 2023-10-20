@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+}
+.mainbody{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 12vh;
+}
+.grid{
+      display: grid;
+      grid-template-columns: 40vw 18vw 18vw 18vw;
+      grid-template-rows: 6vh 35vh auto auto 32vh;
+      grid-template-areas:
+      'myimg free free free' 
+      'myimg myname myname myname'
+      'myimg myadd myadd myadd'
+      'myimg dob dob dob'
+      'myimg other other other';
+      
+}
+.free{
+      grid-area: free;
+}
+.myimg{
+      grid-area: myimg;
+}
+.myname{
+      grid-area: myname;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      height: 35vh;
+}
+.myadd{
+      grid-area: myadd;
+      display: flex;
+}
+.dob{
+      grid-area: dob;
+      margin-top: 1vh;
+}
+.other{
+      grid-area: other;
+}
+
+
+.menubar{
+      background: linear-gradient(to right,rgb(224, 3, 3),rgb(152, 1, 21));
+      display: flex; 
+      align-items: center;
+      width: 100vw;
+      height: 12vh;
+}
+.webname{
+      display: flex;
+      height: 15vh; 
+      justify-content: center;  
+      align-items: center;
+      font-family: 'Roboto', sans-serif; 
+      font-size: 5vh;
+      font-weight: 400; 
+      margin-left: 14vw;
+      text-shadow: 0.2vw 0.2vw 1vw #490000;
+}
+.menu{
+      font-family: 'Roboto', sans-serif;
+      font-size: 2.5vh;
+      font-weight: 400;
+      display: flex;
+      justify-content: left;
+      margin-left: 15vw;
+      align-items: center;
+}
+.menuitem{
+      margin: 3vw 3vw 3vw 0vw;
+      
+}
+.bgcolor{
+
+      background: radial-gradient(circle,#ffffff,#e1e0e0);
+      height: 100%;
+      position: relative;
+      /*background: rgb(255, 242, 1);*/
+
+}
+.myphoto{
+      /*background: rgb(232, 207, 180);*/
+      position: fixed;
+      bottom: 0vh;
+      left: 6vw;
+      object-fit: contain;
+      height: 80vh;
+      width: 30vw;
+}
+.mynamee{
+      font-size: 7vw;
+      font-family: 'Bebas Neue', sans-serif;
+      animation: movemyname;
+      animation-iteration-count: 1;
+      animation-duration: 1s;
+}
+@keyframes movemyname{
+      from{margin-left: 5vw; opacity: 0%;}
+      to{margin-left: 0%; opacity: 100%;}
+}
+
+.fontdescripe{
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.25vw;
+      font-weight: 300;
+      /*background: rgb(240, 155, 155);*/
+}
+.fontdescripe1{
+      margin-left: 2vw;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.25vw;
+      font-weight: 400;
+      /*background: rgb(240, 155, 155);*/
+}
+.fontdescripe2{
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.25vw;
+      font-weight: 300;
+      /*background: rgb(36, 255, 11);*/
+}
+
+.iconwithtext{
+      display: flex;
+      flex-wrap: wrap;
+      
+}
+.icon{
+      margin-top: 0.2vw;
+      /*background: white;*/
+      width: 2.5vw;
+      height: 2.5vh;
+}
+.triang{
+      margin-top: 2.5vw;
+      margin-left: 0.75vw;
+      height: 4vw;
+
+}
+.content{
+      background-color: yellow;
+      border: 2px solid black;
+      box-sizing: border-box;
+}

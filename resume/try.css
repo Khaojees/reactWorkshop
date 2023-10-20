@@ -1,0 +1,29 @@
+*.content{
+      background-color: yellow;
+      border: 2px solid black;
+      box-sizing: border-box;
+}
+.grid{
+      display: grid;
+      grid-template-columns: 50vw 50vw;
+      grid-template-rows: 50vh;
+      grid-template-areas:
+      'left right' ;
+}
+.left{
+      grid-area: left;
+      display: flex;
+      flex-wrap: wrap;
+}
+.right{
+      grid-area: right;
+      display: flex;
+      flex-wrap: wrap;
+
+}
+.color1{
+      background: red;
+}
+.color2{
+      background: rgb(26, 255, 49);
+}
